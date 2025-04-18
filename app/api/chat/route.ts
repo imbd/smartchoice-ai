@@ -53,12 +53,12 @@ For duration, determine appropriate reflection time (in seconds) based on:
 In other words, the timer is for the user to reflect on what the AI just asked them.
 
 Guidelines for duration:
-- If the AI response contains simple clarifying questions: 10-30 seconds
-- If the AI response raises moderate complexity considerations: 20-40 seconds
-- If the AI response asks deep, value-based questions: 30-60 seconds
-- If the AI response requires life-changing reflection: 60-120 seconds
+- If the AI response contains simple clarifying questions: 0-20 seconds
+- If the AI response raises moderate complexity considerations: 10-20 seconds
+- If the AI response asks deep, value-based questions: 15-30 seconds
+- If the AI response requires life-changing reflection: 30-60 seconds
 
-You can set 0 seconds in case the decision is simple, AI didn't ask any questions or they are simple and the user doesn't need to reflect. but in general be judicious - too long timers can be frustrating.`
+Set 0 seconds in case the decision is simple, AI didn't ask any questions or they are simple and the user doesn't need to reflect. but in general be judicious - too long timers can be frustrating.`
         },
         ...messages,
         {
