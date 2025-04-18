@@ -58,7 +58,8 @@ Guidelines for duration:
 - If the AI response asks deep, value-based questions: 15-30 seconds
 - If the AI response requires life-changing reflection: 30-60 seconds
 
-Set 0 or 5 seconds in case the user doesn't really need to reflect. And in general be judicious - too long timers can be frustrating.`
+Set 0 or 5 seconds in case the user doesn't really need to reflect. And in general be judicious - too long timers can be frustrating.
+You must always set timer to 0 if user already confirmed the decision and therefore doesn't need to reflect.`
         },
         ...messages,
         {
