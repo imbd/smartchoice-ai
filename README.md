@@ -1,14 +1,14 @@
 # SmartChoice-AI
 
-A lightweight web app that injects a short, topic-aware reflection timer into conversations to help users make better decisions.
+A lightweight web app that injects a decision-importance reflection timer into conversations to help users make better decisions.
 
 ## Features
 
 - Single-page stateless web app (all data stored in browser memory)
 - Chat interface with AI responses
-- Automatic topic detection (financial, career, relationship, general)
-- Probabilistic reflection timer (7-15 seconds) based on topic
-- Topic-specific reflection prompts
+- Automatic decision importance classification (trivial, routine, complex, life-altering)
+- Dynamic reflection timer (10-120 seconds) based on decision importance and AI response complexity
+- Importance-specific reflection prompts
 - Clean UI with progress bar for countdown
 
 ## Getting Started
@@ -44,10 +44,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 
 1. Enter your decision dilemma
 2. The app sends your message to the AI
-3. Depending on the topic, there's a 40-70% chance of triggering a reflection timer
-4. If triggered, you'll see a countdown timer and reflection prompts related to your topic
-5. After the timer expires, you can continue the conversation
-6. If you refresh the page, all conversation history is cleared
+3. After receiving the AI response, the system automatically classifies the decision importance
+4. Based on the importance level and the complexity of the AI response, a reflection timer is set
+5. During the reflection period, you'll see contextually relevant prompts based on the decision importance
+6. After the timer expires, you can continue the conversation
+7. If you refresh the page, all conversation history is cleared
 
 ## Built With
 
