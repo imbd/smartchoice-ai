@@ -58,12 +58,12 @@ Guidelines for duration:
 - If the AI response asks deep, value-based questions: 15-30 seconds
 - If the AI response requires life-changing reflection: 30-60 seconds
 
-Set 0 seconds in case the decision is simple, AI didn't ask any questions or they are simple and the user doesn't need to reflect. but in general be judicious - too long timers can be frustrating.`
+Set 0 or 5 seconds in case the user doesn't really need to reflect. And in general be judicious - too long timers can be frustrating.`
         },
         ...messages,
         {
           role: "system",
-          content: `The above was the conversation history. This is the LAST AI response the user needs to reflect on: "${aiResponse}"`
+          content: `The above was the conversation history. This is the LAST AI response the user potentially needs to reflect on: "${aiResponse}"`
         }
       ],
       max_tokens: 30
