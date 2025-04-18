@@ -84,7 +84,7 @@ Set 0 seconds in case the decision is simple, AI didn't ask any questions or the
       : "routine";
     
     // Validate duration is within reasonable bounds (10-240 seconds)
-    const validDuration = Math.min(Math.max(duration, 10), 240);
+    const validDuration = Math.min(Math.max(duration, 0), 240);
     
     console.log(`Decision classified as: ${validImportance}, Timer duration: ${validDuration}s`);
     
