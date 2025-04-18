@@ -207,13 +207,12 @@ export default function ChatPage() {
           {timerActive && reflectionPrompts.length > 0 && (
             <div className="flex justify-start">
               <div className="max-w-[90%] rounded-lg px-4 py-3 bg-amber-50 border border-amber-200">
-                <div className="flex items-center text-amber-700 mb-2">
+                <div className="flex items-center text-amber-700 mb-3">
                   <Timer className="h-4 w-4 mr-2 flex-shrink-0" />
-                  <p className="font-medium">Let's take a moment to reflect on this decision.</p>
+                  <p className="font-medium">Let's reflect: consider these points</p>
                 </div>
 
-                <div className="mb-3 pl-6 space-y-2">
-                  <p className="font-medium text-amber-800">While time ticks, think about these two things:</p>
+                <div className="pl-6 mb-3">
                   <ol className="list-decimal pl-5 space-y-2 text-amber-700">
                     <li>{reflectionPrompts[0]}</li>
                     <li>{reflectionPrompts[1]}</li>
