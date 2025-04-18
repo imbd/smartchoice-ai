@@ -55,4 +55,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 - React
 - Tailwind CSS
 - shadcn/ui components
-- OpenAI GPT-4.1 
+- OpenAI GPT-4.1
